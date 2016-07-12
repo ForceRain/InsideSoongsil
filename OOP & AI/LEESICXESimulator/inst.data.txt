@@ -1,0 +1,59 @@
+﻿ADD	3/4	18	1	A레지스터와 memory 주소로부터 3바이트 읽은 것을 더하여 A레지스터에 저장.
+ADDF	3/4	58	1	F레지스터와 memory 주소로부터 6바이트 읽은 것을 더하여 F레지스터에 저장.
+ADDR	2	90	2	r1 레지스터와 r2 레지스터의 값을 더하고 결과를 r2 레지스터에 저장.
+AND	3/4	40	1	A레지스터와 memory 주소로부터 3바이트 읽은 것을 bitwise-AND연산을 취하고 A레지스터에 결과를 저장.
+CLEAR	2	B4	2	r1 레지스터 내부의 값을 0으로 초기화.
+COMP	3/4	28	1	A레지스터와 memory 주소로부터 3바이트 읽은 것을 비교하여 condition code설정.
+COMPF	3/4	88	1	A레지스터와 memory 주소로부터 6바이트 읽은 것을 비교하여 condition code설정.
+COMPR	2	A0	2	r1 레지스터와 r2 레지스터의 값을 비교하고 condition code설정.
+DIV	3/4	24	1	A레지스터의 값을 memory 주소로부터 3바이트 읽은 것으로 나누어서 A레지스터에 저장.
+DIVF	3/4	64	1	F레지스터의 값을 memory 주소로부터 6바이트 읽은 것으로 나누어서 F레지스터에 저장.
+DIVR	2	9C	2	r1 레지스터를 r2 레지스터의 값으로 나누고 결과를 r2레지스터에 저장.
+FIX	1	C4	0	F레지스터의 값을 A레지스터에 정수로 변환후에 저장.
+FLOAT	1	C0	0	A레지스터의 값을 F레지스터에 실수로 변환후에 저장.
+HIO	1	F4	0	A레지스터의 값에 해당하는 I/O channel을 중지함.
+J	3/4	3C	1	PC레지스터에 memory번지의 값을 할당함.
+JEQ	3/4	30	1	Condition code가 '='이면 memory번지의 값을 PC레지스터에 할당.
+JGT	3/4	34	1	Condition code가 '>'이면 memory번지의 값을 PC레지스터에 할당.
+JLT	3/4	38	1	Condition code가 '<'이면 memory번지의 값을 PC레지스터에 할당.
+JSUB	3/4	48	1	PC레지스터의 값을 L레지스터에 할당하고, memory번지의 값을 PC레지스터에 할당.
+LDA	3/4	00	1	A레지스터에 memory 주소로부터 3바이트 읽은 것을 저장.
+LDB	3/4	68	1	B레지스터에 memory 주소로부터 3바이트 읽은 것을 저장.
+LDCH	3/4	50	1	A레지스터의 rightmost byte에 memory번지 주소로부터 읽은 것을 저장.
+LDF	3/4	70	1	F레지스터에 memory 주소로부터 6바이트 읽은 것을 저장.
+LDL	3/4	08	1	L레지스터에 memory 주소로부터 3바이트 읽은 것을 저장.
+LDS	3/4	6C	1	S레지스터에 memory 주소로부터 3바이트 읽은 것을 저장.
+LDT	3/4	74	1	T레지스터에 memory 주소로부터 3바이트 읽은 것을 저장.
+LDX	3/4	04	1	X레지스터에 memory 주소로부터 3바이트 읽은 것을 저장.
+LPS	3/4	D0	1	Processor상태를 memory주소의 시작으로 부터 읽어옴.
+MUL	3/4	20	1	A레지스터와 memory 주소로부터 3바이트 읽은 것을 곱하여 A레지스터에 저장.
+MULF	3/4	60	1	F레지스터와 memory 주소로부터 6바이트 읽은 것을 곱하여 F레지스터에 저장.
+MULR	2	98	2	r1 레지스터와 r2 레지스터의 값을 곱하고 결과를 r2 레지스터에 저장.
+NORM	1	C8	0	F레지스터의 값을 정규화 시켜서 다시 F레지스터에 저장.
+OR	3/4	44	1	A레지스터와 memory 주소로부터 3바이트 읽은 것을 Bitwise-OR연산을 하고 그 결과를 A레지스터에 저장.
+RD	3/4	D8	1	memory번지에 있는 값에 해당하는 device를 이용해서 A레지스터의 rightmost byte에 읽어옴.
+RMO	2	AC	2	r1레지스터의 값을 r2레지스터로 옮김.
+RSUB	3/4	4C	0	PC레지스터에 L레지스터의 값을 할당.
+SHIFTL	2	A4	2	r1레지스터의 값을 왼쪽으로 circular shift를 n번진행하고, r1레지스터에 저장.
+SHIFTR	2	A8	2	r1레지스터의 값을 오른쪽으로 circular shift를 n번진행하고, r1레지스터에 저장.
+SIO	1	F0	0	A레지스터의 값에 해당하는 I/O channel을 시작함. channel program의 주소는 S레지스터에 존재함.
+SSK	3/4	EC	1	A레지스터에 있는 값(주소를 위한 보호키)을 memory번지에 저장한다.
+STA	3/4	0C	1	A레지스터에 있는 값을 memory주소에 3바이트 크기만큼 저장.
+STB	3/4	78	1	B레지스터에 있는 값을 memory주소에 3바이트 크기만큼 저장.
+STCH	3/4	54	1	A레지스터에 있는 값의 rightmost byte를 memory주소에 1바이트 크기만큼 저장.
+STF	3/4	80	1	F레지스터에 있는 값을 memory주소에 6바이트 크기만큼 저장.
+STI	3/4	D4	1	memory주소에 있는 3바이트의 값을 Interval timer value에 할당한다.
+STL	3/4	14	1	L레지스터에 있는 값을 memory주소에 3바이트 크기만큼 저장.
+STS	3/4	7C	1	S레지스터에 있는 값을 memory주소에 3바이트 크기만큼 저장.
+STSW	3/4	E8	1	SW레지스터에 있는 값을 memory주소에 3바이트 크기만큼 저장.
+STT	3/4	84	1	T레지스터에 있는 값을 memory주소에 3바이트 크기만큼 저장.
+STX	3/4	10	1	X레지스터에 있는 값을 memory주소에 3바이트 크기만큼 저장.
+SUB	3/4	1C	1	A레지스터와 memory 주소로부터 3바이트 읽은 것을 빼서 A레지스터에 저장.
+SUBF	3/4	5C	1	F레지스터와 memory 주소로부터 6바이트 읽은 것을 빼서 F레지스터에 저장.
+SUBR	2	94	2	r2 레지스터에서 r1 레지스터의 값을 빼고 결과를 r2 레지스터에 저장.
+SVC	2	B0	1	Supervisor Call interrupt를 발효함.
+TD	3/4	E0	1	memory주소에 있는 값에 해당하는 device를 테스트함.
+TIO	1	F8	0	A레지스터값에 해당하는 I/O channel을 테스트함.
+TIX	3/4	2C	1	X레지스터의 값을 1증가, 증가된 X레지스터의 값과 memory주소로부터 3바이트를 비교, condition code를 생성함.
+TIXR	2	B8	1	X레지스터의 값을 1증가, 증가된 X레지스터의 값과 r1레지스터의 값을 비교, condition code생성.
+WD	3/4	DC	1	A레지스터의 rightmost byte에 해당하는 값을 memory주소에 쓴다.

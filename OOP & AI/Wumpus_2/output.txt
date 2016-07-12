@@ -1,0 +1,8 @@
+
+Trial 1 score: 6
+Trial 1 StateSeq: START_TRIAL,1_TURN_RIGHT,2_SHOOT,3_GO_FORWARD,4_GO_FORWARD,5_GRAB,END_TRIAL
+Trial 1 path: (1,2),(1,2),(1,2),(1,2),(2,2),(3,2),(3,2)
+
+Number of trials: 1
+Total Score: 6
+Average Score: 6.0
