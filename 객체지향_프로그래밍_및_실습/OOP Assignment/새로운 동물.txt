@@ -1,0 +1,55 @@
+
+    class be extends JPanel {
+    	int x=0;
+    	public void paintComponent(Graphics g) {
+    		Color color =new Color(161,105,88);
+    		Color color1 = new Color(148,84,59);
+    		Color color2 = new Color(89,30,12);
+    		Graphics2D g2 = (Graphics2D)g;
+    		super.paintComponent(g2);
+    		RoundRectangle2D.Double ear1 = new RoundRectangle2D.Double(x+135, 35, 15, 15,15,15);
+    		g2.setColor(Color.darkGray);
+    		g2.fill(ear1);//蓖1
+    		RoundRectangle2D.Double ear2 = new RoundRectangle2D.Double(x+160,35, 15, 15,15,15);
+    		g2.setColor(Color.darkGray);
+    		g2.fill(ear2);//蓖2
+    		g2.setColor(color1);
+    		RoundRectangle2D.Double head = new RoundRectangle2D.Double(x+130,50, 50, 50, 15, 15);
+    		g2.fill(head);//赣府
+    		g2.setColor(Color.black);
+    		g2.fillOval(x+137,60, 8, 8);//传
+    		g2.setColor(Color.black);
+    		g2.fillOval(x+163,60, 8, 8);//传
+    		RoundRectangle2D.Double nose = new RoundRectangle2D.Double(x+138,75, 35, 20,30,30);
+    		g2.setColor(Color.orange);
+    		g2.fill(nose);//涝
+    		g2.setColor(Color.black);
+    		g2.fillOval(x+150,80, 10, 10);//内
+    		g2.setColor(color);
+    		CubicCurve2D.Double hand = new CubicCurve2D.Double(x+126,126,x+93,59,x+63,82,x+114,150);
+    		g2.fill(hand);
+    		CubicCurve2D.Double hand2= new CubicCurve2D.Double(x+188,126,x+221,59,x+251,82,x+200,150);
+    		g2.fill(hand2);
+    		g2.setColor(color);
+    		g2.setColor(color);
+    		CubicCurve2D.Double hand3 = new CubicCurve2D.Double(x+122,213,x+117,240,x+147,240,x+142,213);
+    		g2.fill(hand3);
+    		g2.fillRect(x+122,190, 20, 30);//颊2
+    		g2.setColor(color);
+    		g2.fillRect(x+170,190, 20, 30);//颊2
+    		CubicCurve2D.Double hand4 = new CubicCurve2D.Double(x+170,213,x+165,240,x+195,240,x+190,213);
+    		g2.fill(hand4);
+    		g2.setColor(color2);
+        	g2.fillRect(x+130,100,50, 100);//个烹
+    		CubicCurve2D.Double body = new CubicCurve2D.Double(x+130,100,x+100,100,x+100,200,x+130,200);
+    		CubicCurve2D.Double body2 = new CubicCurve2D.Double(x+180,100,x+210,100,x+210,200,x+180,200);
+    		g2.fill(body);
+    		g2.fill(body2);
+    		Polygon p =new Polygon();
+    		p.addPoint(x+130, 115);
+    		p.addPoint(x+180, 115);
+    		p.addPoint(x+155, 130);
+    		g2.setColor(Color.white);
+    		g2.fillPolygon(p);
+    		}
+    }

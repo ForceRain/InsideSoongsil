@@ -1,0 +1,79 @@
+import javax.swing.JPanel;
+import javax.swing.JLabel;
+import javax.swing.JButton;
+import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JTextField;
+import java.awt.Graphics2D;
+import java.awt.Graphics;
+import java.awt.BorderLayout;
+
+public class Ques2Panel extends JPanel
+{
+	private String textInput;
+	private JLabel upperText;
+	private JLabel result;
+	private JButton convert;
+	private ButtonListener BTListener;
+	private JTextField inputField;
+	private double convertDouble;
+	private JPanel inputPanel;
+	
+	public Ques2Panel()
+	{
+		convertDouble=0;
+		inputPanel=new JPanel();
+		
+		convert=new JButton("Convert");
+		BTListener=new ButtonListener();
+		convert.addActionListener(BTListener);
+		
+		inputField=new JTextField(10);
+		
+		this.setLayout(new BorderLayout());
+		
+		upperText=new JLabel("Enter the reading in Celcius");
+		
+		result=new JLabel("Fahrenheit = "+convertDouble);
+		
+		inputPanel.add(inputField);
+		inputPanel.add(convert);
+		
+		this.add(upperText,BorderLayout.NORTH);		
+		this.add(result,BorderLayout.SOUTH);
+		this.add(inputPanel,BorderLayout.CENTER);
+	}
+	
+	class ButtonListener implements ActionListener
+	{
+		public void actionPerformed(ActionEvent event)
+		{
+			textInput=inputField.getText();
+			convertDouble=Double.parseDouble(textInput);
+			try
+			{
+				check();
+			}
+			catch(Exception e)
+			{}
+			
+		}
+	}
+	
+	public void check() throws NumberTooSmallException
+	{
+		if (convertDouble<0)
+			throw new NumberTooSmallException();
+	}
+	
+	public void paintComponent(Graphics g)
+	{
+		Graphics2D g2=(Graphics2D)g;
+		
+		upperText.setFont(new Font(upperText.toString(),Font.BOLD,10));
+		
+		
+		
+	}
+}
