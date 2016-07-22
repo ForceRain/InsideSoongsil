@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.practical12c.MainActivity" >
+
+    <item
+        android:id="@+id/rotate360"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Rotate"/>
+    
+     <item
+        android:id="@+id/zoomInOut"
+        android:orderInCategory="100"
+        android:title="zoomInOut"/>
+     
+      <item
+        android:id="@+id/fadeInOut"
+        android:orderInCategory="100"
+        android:title="fadeInOut"/>
+
+</menu>

@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.practical7e.MainActivity" >
+
+  	<Button
+        android:id="@+id/photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take a Photo"
+        />
+  	 <Button
+        android:id="@+id/call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Call a Number"
+        />
+  	  
+  	  <Button
+        android:id="@+id/browser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open Browser"
+        />
+  	  
+  	  <Button
+        android:id="@+id/dial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dial a Number"
+        />
+    
+</LinearLayout>

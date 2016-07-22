@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <PreferenceCategory android:title="PREFERENCE CATEGORY LIST PREFERENCE" >
+        
+        <ListPreference
+            android:key="foodPref"
+            android:title="Food Preference"
+            android:summary="Food Preference Summary"
+            android:entries="@array/Foodname"
+            android:entryValues="@array/FoodnameValue"
+            />
+        
+    </PreferenceCategory>
+            
+
+</PreferenceScreen>

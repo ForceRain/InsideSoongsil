@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+    tools:context="com.example.practical7d.FirstActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/input_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.90"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/input_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.90"
+            android:inputType="textPassword"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    
+    <Button 
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="24sp"
+        />
+
+</LinearLayout>

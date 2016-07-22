@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.practical11c.MainActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Origin of Apple"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/countrygroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <RadioButton
+            android:id="@+id/korea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Korea" />
+
+        <RadioButton
+            android:id="@+id/newzealand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Zealand" />
+
+        <RadioButton
+            android:id="@+id/japan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Japan" />
+    </RadioGroup>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert"
+        />
+    
+    <Button
+        android:id="@+id/checktotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Total"
+        />
+        
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="result"
+        />
+    
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.manifestexercise3"
+    android:versionCode="1"
+    android:versionName="1.0" android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+    <uses-configuration android:reqFiveWayNav="false" android:reqHardKeyboard="true" android:reqNavigation="undefined" android:reqKeyboardType="qwerty" android:reqTouchScreen="finger"/>
+    <supports-screens android:resizeable="true" android:largeScreens="true" android:normalScreens="false" android:smallScreens="false" android:anyDensity="true" android:xlargeScreens="true"/>
+    <uses-feature android:name="android.hardware.GPS" android:required="true"/>
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:theme="@style/TextAppearance.AppCompat.Base.SearchResult.Title" android:launchMode="standard" android:screenOrientation="locked" android:name="SecondActivity" android:description="@string/secondactivity"></activity>
+        <activity android:singleUser="true" android:permission="android.permission.ACCESS_WIFI_STATE" android:label="@string/hello_world" android:theme="@style/AppTheme" android:name="ThirdActivity" android:description="@string/hello_world">
+            <intent-filter>
+                <action android:name="android.media.action.IMAGE_CAPTURE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
