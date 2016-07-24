@@ -1,0 +1,90 @@
+#+1363351347
+echo $SHELL
+#+1363398859
+bash --login -i
+#+1363399311
+bash --login -l
+#+1363399613
+tcsh hello_world.tcsh
+#+1363616575
+ls -l
+#+1363616579
+a
+#+1363616583
+two
+#+1363616649
+bash -login -l
+#+1363616746
+first
+#+1363616755
+bash -login
+#+1363671673
+set color
+#+1363671677
+echo color
+#+1363671715
+set color=green
+#+1363701887
+set color =blue
+#+1363701903
+set color=blue
+#+1363760211
+set color=red
+#+1363760371
+hello_world.tcsh
+#+1363760377
+hello_world
+#+1363760441
+echo hello_world.tcsj
+#+1363760448
+echo hello_world.tcsh
+#+1363760454
+echo hello_world
+#+1363768481
+setenv blue color
+#+1363768571
+unset blue
+#+1363768581
+setenv color blue
+#+1363768585
+echo $solor
+#+1363768610
+unsetenv color
+#+1363768616
+unsetenv blue
+#+1363768620
+echo $blue
+#+1363769577
+set color = ( blue red green ivory white black orange )
+#+1363829984
+set color = ( blue red green black )
+#+1363829990
+echo $#color
+#+1363830004
+echo $color[2-4]
+#+1363830009
+unset color
+#+1363831020
+set color = $<
+#+1363831063
+set color = $< go home you crazy
+#+1363831076
+echo $color
+#+1363831205
+echo -n world
+#+1363831211
+echo world
+#+1363831219
+echo -n worworoworworoworworoworoworwor
+#+1363831573
+.
+#+1363831667
+bash
+#+1363832661
+echo C Programming
+#+1363832674
+echo C99 /n C Programming
+#+1363832681
+c99 /
+#+1363832686
+echo c99/

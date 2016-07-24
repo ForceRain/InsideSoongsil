@@ -1,0 +1,8 @@
+BoldAsFont=no
+BackgroundColour=255,255,255
+AllowBlinking=yes
+Font=Consolas
+FontHeight=9
+FontSmoothing=full
+ForegroundColour=0,0,0
+FontIsBold=yes
